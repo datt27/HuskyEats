@@ -10,7 +10,9 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+import com.example.sairamkrishna.myapplication.R;
+
+public class MainActivity extends Activity {
 
     Button b1,b2;
     EditText ed1,ed2;
@@ -39,8 +41,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(),
                             "Redirecting...",Toast.LENGTH_SHORT).show();
                 }else{
-                    Toast.makeText(getApplicationContext(), "Wrong
-                            Credentials",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Wrong Credentials",Toast.LENGTH_SHORT).show();
 
                             tx1.setVisibility(View.VISIBLE);
                     tx1.setBackgroundColor(Color.RED);
